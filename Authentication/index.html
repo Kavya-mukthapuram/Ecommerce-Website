@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+        <div class="nav">
+            <div class="logo">
+                <img src="root.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search plants"><ion-icon class="sch" name="search-sharp"></ion-icon>
+            </div>
+            <div class="buttons">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="register">
+                <a href="signup.html"><button>signup</button></a>
+                <a href="login.html"><button>login</button></a>
+            </div>
+        </div>
+
+
+
+    <div id="home" class="home">
+        <div class="con">
+        <h1 class="fresh"> <span class="span">fresh plants</span> <br> delivered to your doorstep</h1>
+        <h3 class="enjoy">Enjoy the beauty of nature in your own home</h3>
+        <a href="#category"><button class="shop">shop now</button></a>
+        </div>
+        
+        <!-- <h1 class="by">Browse by category</h1>
+        <div class="category" id="category">
+            
+            <div class="plant">
+                <img src="indoor.jpg" alt="Indoor Plants">
+                <h3>Indoor Plants</h3>
+            </div>
+            <div class="plant">
+                <img src="outdoor.jpg" alt="Outdoor Plants">
+                <h3>Outdoor Plants</h3>
+            </div>
+            <div class="plant">
+                <img src="succulents.jpg" alt="Succulents">
+                <h3>Succulents</h3>     
+            </div>
+            <div class="plant">
+                    <img src="flowerplant.jpg" alt="Flowering Plants">
+                    <h3>Flowering Plants</h3>   
+            </div>    
+        </div> -->
+
+     <h1>Featured Products</h1>
+     <div id="products" class="products"></div>
+        
+
+        <div class="contact" id="contact">
+            <h1>Get in touch</h1>
+            <div class="con1">
+            <div class="email">
+                <h1>Contact Form</h1>
+                <div class="t">
+                <h2>Email</h2>
+                <a href="mailto:kavyamukthapuram672@gmail.com">kavyamukthapuram672@gmail.com</a>
+                </div>
+                <div class="t">
+                <h2>Phone</h2>
+                <a href="tel:+9390846796"><p>9390846796</p></a>
+                </div>
+                <div class="t">
+                <h2>Address</h2>
+                <p>Medapuram,AP, India</p>
+                </div>
+            </div>
+            <div class="message">
+                <h1>Send Us a Message</h1>
+                <form action="https://formspree.io/f/maqpqayv" method="POST" id="contactform"> 
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="Email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" rows="2" cols="4" required></textarea>
+                <button class="send">Send Message</button>
+                <p id="status"></p>
+                </form>
+            </div>
+            </div>
+        </div>
+
+    
+    
+    </div>
+   
+</section>
+    
+    
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

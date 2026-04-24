@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="summary"></div>
+    <div id="total">
+     <form  id="details">
+    <h2>Enter your Details</h2>
+        <label for="full-name" >Full Name</label>
+        <input type="text" name="name" id="name" placeholder="Full Name" required>
+        <label for="phone-number">Phone Number</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" maxlength="10" placeholder="phone number" required>
+        <div class="edit">
+        <label for="address">Address</label>
+        <textarea id="address" name="message" rows="4" placeholder="Address" required></textarea>
+        <a  href="checkout.html">Edit Address</a>
+        </div>
+    <button type="button" onclick="placeOrder()">Confirm Order</button>
+    <p id="response"></p>
+    </form>
+    </div>
+<script src="cart.js"></script>
+</body>
+</html>

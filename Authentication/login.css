@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(nature.jpg);
+    /* background-position:fixed; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    object-fit: cover;
+    min-height: 100vh;
+}
+.container{
+    width: 38%;
+    min-height: 360px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 1rem;
+    display: flex;
+    justify-self: center;
+    border-bottom-right-radius: 58px;
+    border-top-left-radius: 58px;
+    animation-name: animate;
+    animation-direction:reverse;
+    animation-play-state:initial;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+      
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100px);
+    }
+    50%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(500px);
+    }
+}
+.con1{
+     margin: 1.5rem auto;
+     width: 80%;
+     height: 1rem;
+}
+h1{
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: underline 2px solid yellow;
+    text-underline-offset: 5.8px;
+}
+h3{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;    
+}
+label{
+    color: yellow;
+    font-weight: bold;  
+    text-transform: capitalize; 
+}
+input{
+    width: 100%;
+    min-height: 20px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: bolder;
+}
+input::placeholder{
+    color: white;
+    font-weight:lighter;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+input:focus{
+    outline: none;
+    border: 2px solid white;
+}
+input::placeholder::after{
+    font-weight: bolder;
+    color: green;
+}
+h4{
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+.forgot {
+    display: flex;
+    justify-content: space-between;
+}
+.forgot input{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+.forgot a{
+    color: white;
+    font-weight: bold;
+}
+button{
+    width: 100%;
+    height: 30px;
+    margin: 0.4rem auto;
+   background-color: white;
+   color: black;
+   text-align: center;
+   border-radius: 8px;
+   border: none;
+   font-size: 1rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: #4CAF50;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    transform: scale(1.01);
+    
+}
+p{
+    color: whitesmoke;
+    word-wrap: break-word;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: yellowgreen;
+    gap: 0.8px;
+    cursor: pointer;
+}
+.sign a{
+    color: yellow;
+    font-weight: bold;
+}
+.sign a:active{
+    transform: translateX(100px);
+    transition: 5s;
+}
+.login a{
+    text-decoration: none;  
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 60%;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
+    }
+
+    .con1 {
+        padding: 25px 30px;
+    }
+
+    .con1 h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===== MOBILE (max 480px) ===== */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        /* min-height: unset; */
+        border-bottom-right-radius: 28px;
+        border-top-left-radius: 28px;
+        margin-top: 1.5rem;
+    }
+
+    .con1 {
+        padding: 25px 20px;
+        gap: 6px;
+    }
+
+    .con1 h1 {
+        font-size: 1.3rem;
+    }
+
+    .con1 h3 {
+        font-size: 0.85rem;
+    }
+
+    .con1 input {
+        font-size: 0.9rem;
+        padding: 9px 12px;
+    }
+
+    .login {
+        font-size: 0.95rem;
+        padding: 9px;
+    }
+}
+
+/* ===== VERY SMALL (max 360px) ===== */
+@media (max-width: 360px) {
+    .container {
+        width: 95%;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .con1 h1 {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* ← fixed breaks on tablets */
+        background-position: center top;
+    }
+}
+
+/* ===== MOBILE (max 480px) ===== */
+@media (max-width: 480px) {
+    body {
+        background-attachment: scroll;  /* ← fixed breaks on mobile */
+        background-position: center top;
+        background-size: cover;
+    }
+}

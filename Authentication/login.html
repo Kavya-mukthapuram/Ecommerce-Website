@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <form action="" class="con1" id="form">
+        <h1>welcome back!</h1>
+        <h3>Please login to your account</h3>
+        <label for="email" >Email</label>
+        <input type="email" placeholder="Enter your email" id="email" required>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter your password" id="password" required>
+        <button type="submit" class="login">Login</button>
+        <p id="result"></p>
+        <p class="sign">Don't have an account? <a href="signup.html">Sign up</a></p>
+        
+        </form>
+    </div>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    const supabaseUrl = "https://sykyuskpoydrbjxqsljs.supabase.co"; 
+  const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN5a3l1c2twb3lkcmJqeHFzbGpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIxNzU1ODEsImV4cCI6MjA4Nzc1MTU4MX0.4SdetSVPHJ3J8_J1pdX4SSZyQYdgO7ZHgRUBZUpNO20";
+   window.supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+</script>
+ <script src="login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+</body>
+</html>

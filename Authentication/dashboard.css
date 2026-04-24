@@ -1,0 +1,94 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: bisque;
+    position: relative;
+    border-radius: 15px;
+}
+.logo img{
+width:170px;
+min-height: 80px;
+border-radius: 30px;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}   
+.search input{
+    width: 400px;
+    min-height: 42px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 0.2rem;
+    border: 2px solid black;
+}
+.search input::placeholder{
+    color:lightgreen ;
+    font-size: 25px;
+}
+ .sch{
+    font-size: 50px;
+    height: 40px;
+    margin-top: 0.2rem;
+    margin-left: -2.85rem;
+    color:#4CAF50;
+}
+.register button{
+    margin-top: 1.49rem;
+    width: 88px;
+    min-height:40px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 23px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    background-color: bisque;
+}
+.register button:hover{
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: #4CAF50;
+}
+.register a{
+    text-decoration: none;
+    
+}
+.register a:active{
+    transform: translateY(100px);
+    transition: 15s;
+}
+.buttons{
+    margin-top: 1.49rem;
+}
+.buttons a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0.5rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.buttons a:hover{
+   color: black;
+    letter-spacing: 1px;
+    font-size: 22px;
+    text-decoration: underline;
+     text-decoration-color:#4CAF50;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px ;
+}
+#welcome{
+    margin: 0.8rem 0;
+    font-size: 50px;
+    color: rgb(239, 96, 120);
+    text-transform: capitalize;
+    font-family:cursive;
+}

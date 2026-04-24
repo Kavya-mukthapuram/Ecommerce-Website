@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(nature.jpg);
+    /* background-position:fixed; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    object-fit: cover;
+    min-height: 100vh;
+}
+.container{
+    width: 38%;
+    min-height: 580px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 1rem;
+    display: flex;
+    justify-self: center;
+    border-bottom-right-radius: 58px;
+    border-top-left-radius: 58px;
+    animation-name: animate;
+    animation-direction:reverse;
+    animation-play-state:unset;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+
+
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100px);
+    }
+    50%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(-500px);
+    }
+}
+.con1{
+     margin: 1.5rem auto;
+     width: 80%;
+     height: 1rem;
+}
+h1{
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: underline 2px solid yellow;
+    text-underline-offset: 5.8px;
+}
+h3{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;    
+}
+label{
+    color: yellow;
+    font-weight: bold;  
+    text-transform: capitalize; 
+}
+input{
+    width: 100%;
+    min-height: 20px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: bolder;
+}
+input::placeholder{
+    color: white;
+    font-weight:lighter;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+input:focus{
+    outline: none;
+    border: 2px solid white;
+}
+input::placeholder::after{
+    font-weight: bolder;
+    color: green;
+}
+option{
+    color: yellow;
+    font-weight: bold;  
+    text-transform: capitalize; 
+}
+select{
+    width: 100%;
+    min-height: 20px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: bolder;
+    color: white;
+}
+select:focus{
+    outline: none;
+    border: 2px solid white;
+}
+select::placeholder::after{
+    font-weight: bolder;
+    color: green;
+}
+p{
+    color: whitesmoke;
+    word-wrap: break-word;
+}
+button{
+    width: 100%;
+    height: 30px;
+    margin: 0.4rem auto;
+   background-color: white;
+   color: black;
+   text-align: center;
+   border-radius: 8px;
+   border: none;
+   font-size: 1rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: #4CAF50;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    transform: scale(1.01);
+    
+}
+.account{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.account a{
+    font-weight: bolder;
+    color: yellow;
+}
+.sign a{
+    text-decoration: none;  
+}
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .container {
+        width: 60%;
+        
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
+        margin: 1.5rem auto;
+    }
+
+    .con1 {
+        padding: 25px 30px;
+    }
+
+    .con1 h1 {
+        font-size: 1.4rem;
+    }
+}
+
+/* ===== MOBILE (max 480px) ===== */
+@media (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 90%;
+        border-bottom-right-radius: 28px;
+        border-top-left-radius: 28px;
+        margin: 1rem auto;
+    }
+
+    .con1 {
+        padding: 20px 18px;
+        gap: 5px;
+    }
+
+    .con1 h1 {
+        font-size: 1.2rem;
+    }
+
+    .con1 h3 {
+        font-size: 0.8rem;
+    }
+
+    .con1 input,
+    .con1 select {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .sign {
+        font-size: 0.95rem;
+        padding: 9px;
+    }
+}
+
+/* ===== VERY SMALL (max 360px) ===== */
+@media (max-width: 360px) {
+    .container {
+        width: 95%;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .con1 h1 {
+        font-size: 1rem;
+    }
+
+    .con1 {
+        padding: 16px 14px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* ← fixed breaks on tablets */
+        background-position: center top;
+    }
+}
+
+/* ===== MOBILE (max 480px) ===== */
+@media (max-width: 480px) {
+    body {
+        background-attachment: scroll;  /* ← fixed breaks on mobile */
+        background-position: center top;
+        background-size: cover;
+    }
+}

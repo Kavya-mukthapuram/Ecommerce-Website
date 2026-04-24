@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+   
+</head>
+<body>
+    <div class="container">
+        <form action="" class="con1" id="signupForm">
+            <h1>create your account</h1>
+            <h3>signup to get started</h3>
+ 
+            <label for="username" >Full Name</label>
+            <input type="text" id="name" placeholder="fullname" required>
+            <label for="">email</label>
+            <input type="email" placeholder="Enter Your Email" id="email" required>
+            <label for="">password</label>
+            <input type="password" placeholder="Enter Your Password" id="password" required>
+            <label for="">confirm password</label>
+            <input type="password" placeholder="confirm password"  id="confirmpassword" required> 
+            <label for="">Role</label>
+            <select name="role" id="role" required>
+                <option value="user">user</option>
+    
+            </select>
+            <p>By Signing Up,you Agree to our Terms and Conditions and Privacy Policy.</p>
+            <button type="submit" class="sign">Signup</button>
+            <p id="result"></p>
+            <p class="account">Already have an account?<a href="login.html">Login</a></p>
+            
+        </form>   
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  
+  const supabaseUrl = "https://sykyuskpoydrbjxqsljs.supabase.co";
+  const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN5a3l1c2twb3lkcmJqeHFzbGpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIxNzU1ODEsImV4cCI6MjA4Nzc1MTU4MX0.4SdetSVPHJ3J8_J1pdX4SSZyQYdgO7ZHgRUBZUpNO20";
+  window.supabase = window.supabase.createClient(supabaseUrl, supabaseKey); 
+</script>
+    <script src="signup.js"></script>
+</body>
+</html>
