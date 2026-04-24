@@ -135,7 +135,8 @@ All plant data and user orders are stored and managed in **Supabase**:
 You can deploy this project easily on any static hosting platform:
 
 ### Netlify
-- Drag and drop your project folder at [netlify.com/drop](https://ecommerce-website-plant.netlify.app/)
+- Drag and drop your project folder at [netlify.com/drop].
+- [live Link(https://ecommerce-website-plant.netlify.app/)
 
 ### GitHub Pages
 - Go to Repository Settings → Pages → Select branch `main` → Save
@@ -163,8 +164,8 @@ This project is licensed under the [MIT License](./LICENSE).
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-Kavya-mukthapuram)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-profile)
+- GitHub: [Kavya-mukthapuram](https://github.com/your-Kavya-mukthapuram)
+- LinkedIn: [kavya-mukthapuram](https://www.linkedin.com/in/kavya-mukthapuram-228966346)
 
 ---
 
