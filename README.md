@@ -8,7 +8,7 @@
 ## 📸 Preview
 
 <!-- Add a screenshot of your project here -->
-![PlantShop Preview](./assets/preview.png)
+![PlantShop Preview](./Authentication/Screenshot 2026-04-24 192101.png)
 
 ---
 
@@ -67,8 +67,8 @@ plantshop/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/plantshop.git
-cd plantshop
+git clone https://github.com/Kavya-mukthapuram/Ecommerce-Website.git
+cd Ecommerce-Website
 ```
 
 ### 2. Set Up Supabase
@@ -80,11 +80,6 @@ cd plantshop
 |--------|------|
 | id | int8 (Primary Key) |
 | name | text |
-| description | text |
-| price | float4 |
-| category | text |
-| image_url | text |
-| stock | int4 |
 
 3. Enable **Row Level Security (RLS)** as needed
 4. Copy your **Project URL** and **Anon Key** from Project Settings → API
@@ -139,17 +134,8 @@ All plant data and user orders are stored and managed in **Supabase**:
 
 You can deploy this project easily on any static hosting platform:
 
-### Vercel
-```bash
-# Install Vercel CLI
-npm install -g vercel
-
-# Deploy
-vercel
-```
-
 ### Netlify
-- Drag and drop your project folder at [netlify.com/drop](https://netlify.com/drop)
+- Drag and drop your project folder at [netlify.com/drop](https://ecommerce-website-plant.netlify.app/)
 
 ### GitHub Pages
 - Go to Repository Settings → Pages → Select branch `main` → Save
@@ -161,9 +147,9 @@ vercel
 Contributions are welcome! Feel free to:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
+2. Create a feature branch 
+3. Commit your changes 
+4. Push to the branch 
 5. Open a Pull Request
 
 ---
@@ -177,7 +163,7 @@ This project is licensed under the [MIT License](./LICENSE).
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
+- GitHub: [@your-username](https://github.com/your-Kavya-mukthapuram)
 - LinkedIn: [your-linkedin](https://linkedin.com/in/your-profile)
 
 ---
