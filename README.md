@@ -8,7 +8,7 @@
 ## 📸 Preview
 
 <!-- Add a screenshot of your project here -->
-![PlantShop Preview](./Authentication/Screenshot 2026-04-24 192101.png)
+![PlantShop Preview](https://github.com/Kavya-mukthapuram/Ecommerce-Website/blob/main/Authentication/Screenshot%202026-04-24%20192101.png)
 
 ---
 
@@ -136,7 +136,7 @@ You can deploy this project easily on any static hosting platform:
 
 ### Netlify
 - Drag and drop your project folder at [netlify.com/drop].
-- [live Link(https://ecommerce-website-plant.netlify.app/)
+- [live Link](https://ecommerce-website-plant.netlify.app/)
 
 ### GitHub Pages
 - Go to Repository Settings → Pages → Select branch `main` → Save
